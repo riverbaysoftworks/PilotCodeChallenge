@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91309B3239FFE2400635B02 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91309B2239FFE2400635B02 /* IntroView.swift */; };
 		C97C5D7C239CB8C8008D7690 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C5D7B239CB8C8008D7690 /* Extensions.swift */; };
 		C9858C45239825EC009ADE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9858C44239825EC009ADE1C /* AppDelegate.swift */; };
 		C9858C47239825EC009ADE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9858C46239825EC009ADE1C /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91309B2239FFE2400635B02 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		C97C5D7B239CB8C8008D7690 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C9858C41239825EC009ADE1C /* PilotCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9858C44239825EC009ADE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C9858C46239825EC009ADE1C /* SceneDelegate.swift */,
 				C9858C48239825EC009ADE1C /* ContentView.swift */,
 				C9858C5823982664009ADE1C /* MapView.swift */,
+				C91309B2239FFE2400635B02 /* IntroView.swift */,
 				C97C5D7B239CB8C8008D7690 /* Extensions.swift */,
 				C9F89AF62398340F001008ED /* PilotLoc.swift */,
 				C9F89AF8239834C7001008ED /* PilotRequestManager.swift */,
@@ -164,6 +167,7 @@
 				C9858C47239825EC009ADE1C /* SceneDelegate.swift in Sources */,
 				C9F89AF72398340F001008ED /* PilotLoc.swift in Sources */,
 				C9858C49239825EC009ADE1C /* ContentView.swift in Sources */,
+				C91309B3239FFE2400635B02 /* IntroView.swift in Sources */,
 				C97C5D7C239CB8C8008D7690 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

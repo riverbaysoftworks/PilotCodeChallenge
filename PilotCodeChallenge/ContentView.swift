@@ -13,16 +13,28 @@ struct ContentView: View {
     
     @State var manager = CLLocationManager()
     @State var alert = false
+    
+    @State var showingIntro = true
 
         var body: some View {
-            //print(manager.location?.coordinate)
             
-            
+            ZStack{
+                Color.red
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+              Text("Code Challenge")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.white)  //.background(Color.green)
+                
              MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
                          
                          Alert(title: Text("Please Enable Location Access In Settings Pannel !!!"))
                      }
-
+                }
+            }.sheet(isPresented: $showingIntro) {
+                IntroView()
+            }
         }
     }
 
