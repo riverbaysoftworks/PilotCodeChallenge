@@ -7,15 +7,27 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
+    
+    @State var manager = CLLocationManager()
+    @State var alert = false
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        var body: some View {
+            //print(manager.location?.coordinate)
+            
+            
+             MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
+                         
+                         Alert(title: Text("Please Enable Location Access In Settings Pannel !!!"))
+                     }
+
+        }
     }
-}
+
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
