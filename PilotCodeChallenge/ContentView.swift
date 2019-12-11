@@ -13,6 +13,7 @@ struct ContentView: View {
     
     @State var manager = CLLocationManager()
     @State var alert = false
+    @State var favStoreAlert = false
     
     @State var showingIntro = true
 
@@ -27,11 +28,15 @@ struct ContentView: View {
                 .bold()
                 .foregroundColor(.white)  //.background(Color.green)
                 
-             MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
+                MapView(manager: $manager, alert: $alert, favStoreAlert: $favStoreAlert).alert(isPresented: $alert) {
                          
-                         Alert(title: Text("Please Enable Location Access In Settings Pannel !!!"))
-                     }
+                         Alert(title: Text("Please Enable Location Access In Settings Pannel to Utilize App"))
+                    }
+            .alert(isPresented: $favStoreAlert) {
+                 
+                 Alert(title: Text("Favorite Store Updated"))
                 }
+            }
             }.sheet(isPresented: $showingIntro) {
                 IntroView()
             }
