@@ -68,6 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         content.title = "My Favorite Pilot"
         content.body = "Tap to open the app"
         content.sound = UNNotificationSound.default
+        //content.badge = 1
+        
         
         // when the notification will be triggered
         let timeInSeconds: TimeInterval = 3

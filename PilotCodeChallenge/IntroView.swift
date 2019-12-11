@@ -26,9 +26,11 @@ struct IntroView: View {
                    .padding(.all)
                .shadow(radius: 5)
                    .padding()
-               
-               Text("\u{2022}" + "  Tap on a pin to reveal the store name. After tapping on the pin you can then tap on ℹ️ to select as your favorite store.\n\u{2022}" + "  You will be alerted when you are within 1000 meters of your favorite location.").foregroundColor(.white)
-                   .font(.title) .multilineTextAlignment(.leading).padding()
+           
+            Text("\u{2022}" + "  Tap on a pin to reveal store name.\n \u{2022}" + "  Tap on \u{24D8} to select store as favorite.\n\u{2022}" + "  The app will notify you when near your favorite store.")
+                .font(.title)
+                .foregroundColor(.white)
+                   .multilineTextAlignment(.leading).padding()
                
                Text("The app functions better when the phone is not in low power mode or the battery life is low. To use the app in background mode to see when you are near your favorite store, be sure your location setting for the app is set to 'Always'")
                    .foregroundColor(.white)
